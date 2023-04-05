@@ -1,0 +1,135 @@
+.footer {
+    margin: 130px 186px;
+}
+
+.footer__started {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.footer__line {
+    border-bottom: 1px solid #111111;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    opacity: 10%;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.footer__container-search {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 290px;
+    position: relative;
+
+}
+
+.footer__search-input {
+    margin-top: 30px;
+    width: 289px;
+    height: 51px;
+    border: none;
+    border-bottom: 1px solid #1111110f;
+    font-size: 15px;
+}
+
+.footer__search::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    top: 88px;
+    right: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image: url("../img/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+
+}
+
+.footer__search::placeholder {
+    color: #111111;
+    opacity: 0.5;
+
+}
+
+.footer__menu-link {
+    color: #111111;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.footer__menu-link_green {
+    color: var(--primary)
+}
+
+.footer__container-policy-socials {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__policy {
+    display: flex;
+    gap: 40px;
+}
+
+.footer__policy-text>a {
+    color: #111111;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.footer__socails {
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+}
+
+
+@media (max-width:768px) {
+
+    .footer__nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__menu {
+        flex-direction: row;
+    }
+
+    .footer__search-input {
+        width: 100%;
+    }
+}
+
+@media (max-width:568px) {
+    .footer__started,
+    .footer__policy {
+        flex-direction: column;
+    }
+
+    .footer__col2,
+    .footer__col3,
+    .footer__col4 {
+        flex-wrap: wrap;
+    }
+}
