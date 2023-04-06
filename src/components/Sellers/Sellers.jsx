@@ -1,3 +1,8 @@
+import BoatRockerz333 from '..//../img/BoatRockerz333.png';
+import redStart from '..//../img/red__star.png';
+import BoatKerz234 from '..//../img/BoatKerz234.png';
+import BoatRockerz323 from '..//../img/BoatRockerz323.png';
+
 function Sellers() {
   return (
     <section className="sellers">
@@ -12,17 +17,17 @@ function Sellers() {
             <div className="card__product">
               <img
                 className="card__img"
-                src="./img/Boat Rockerz 333.png"
+                src={BoatRockerz333}
                 alt="Boat Rockerz 333"
               />
               <div className="card__descr">
                 <h4 className="card__text">Boat Rockerz 333</h4>
                 <div className="card__rating">
-                  <img src="./img/red__star.png" alt="rating" />
-                  <img src="./img/red__star.png" alt="rating" />
-                  <img src="./img/red__star.png" alt="rating" />
-                  <img src="./img/red__star.png" alt="rating" />
-                  <img src="./img/red__star.png" alt="rating" />
+                  <img src={redStart} alt="rating" />
+                  <img src={redStart} alt="rating" />
+                  <img src={redStart} alt="rating" />
+                  <img src={redStart} alt="rating" />
+                  <img src={redStart} alt="rating" />
                   <p className="card__rating-count">75 Reviews</p>
                 </div>
                 <p className="card__price">20$</p>
@@ -36,15 +41,15 @@ function Sellers() {
 
           <div className="tab__card card">
             <div className="card__product card__product_blue ">
-              <img className="card__img" src="./img/Boat kerz 234.png" alt="" />
+              <img className="card__img" src={BoatKerz234} alt="" />
               <div className="card__descr">
                 <h4 className="card__text">Boat kerz 234</h4>
                 <div className="card__rating">
-                  <img src="./img/red__star.png" alt="rating" />
-                  <img src="./img/red__star.png" alt="rating" />
-                  <img src="./img/red__star.png" alt="rating" />
-                  <img src="./img/red__star.png" alt="rating" />
-                  <img src="./img/red__star.png" alt="rating" />
+                  <img src={redStart} alt="rating" />
+                  <img src={redStart} alt="rating" />
+                  <img src={redStart} alt="rating" />
+                  <img src={redStart} alt="rating" />
+                  <img src={redStart} alt="rating" />
                   <p className="card__rating-count">75 Reviews</p>
                 </div>
                 <p className="card__price">$40</p>
@@ -55,15 +60,15 @@ function Sellers() {
 
           <div className="tab__card card">
             <div className="card__product card__product_purp">
-              <img className="card__img" src="./img/Boat Rockerz 323.png" alt="" />
+              <img className="card__img" src={BoatRockerz323} alt="" />
               <div className="card__descr">
                 <h4 className="card__text">Boat Rockerz 323</h4>
                 <div className="card__rating">
-                  <img src="./img/red__star.png" alt="rating" />
-                  <img src="./img/red__star.png" alt="rating" />
-                  <img src="./img/red__star.png" alt="rating" />
-                  <img src="./img/red__star.png" alt="rating" />
-                  <img src="./img/red__star.png" alt="rating" />
+                  <img src={redStart} alt="rating" />
+                  <img src={redStart} alt="rating" />
+                  <img src={redStart} alt="rating" />
+                  <img src={redStart} alt="rating" />
+                  <img src={redStart} alt="rating" />
                   <p className="card__rating-count">75 Reviews</p>
                 </div>
                 <p className="card__price">$30</p>

@@ -51,19 +51,11 @@
     left: 301px;
 }
 
-/* .images__container1 {
-
-} */
-
 .images__container2 {
     position: relative;
     top: -69px;
     margin: 0 30px;
 }
-
-/* .images__container2 {
-
-} */
 
 .price {
     font-size: 31px;
@@ -121,6 +113,8 @@
     display: flex;
 
 }
+
+
 
 
 @media (max-width:768px) {

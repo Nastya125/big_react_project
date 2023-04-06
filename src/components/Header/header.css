@@ -1,3 +1,5 @@
+
+
 .header {
     min-height: 888px;
 }
@@ -422,6 +424,23 @@ h1::first-letter {
     line-height: 38px;
     color: var(--textprimarycolor);
     margin-top: 26px;
+}
+
+.star {
+    width: 53px;
+    height: 53px;
+}
+
+.star__first {
+    position: absolute;
+    top: -94px;
+    left: -71px;
+}
+
+.star__second {
+    position: absolute;
+    top: 460px;
+    left: 301px;
 }
 
 @media (max-width:1140px) {

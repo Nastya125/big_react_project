@@ -1,5 +1,38 @@
-@import './css/style.css';
 @import './css/fonts.css';
 @import './css/card.css';
 @import './css/buttons.css';
+
+:root {
+  --primary: #10b981;
+  --primary-hover: #0d89be;
+  --primary-bg: #f5f5f5;
+  --textprimarycolor: #2b2626;
+  --primary-products: #845EC2;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  background-color: var(--primary-bg);
+}
 

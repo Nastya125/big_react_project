@@ -1,3 +1,7 @@
+import headphones3 from '..//../img/Headphones3.png';
+import headphones2 from '..//../img/Headphones2.png';
+import headphones1 from '..//../img/Headphones1.png';
+
 function Products() {
   return (
     <section className="products">
@@ -6,17 +10,17 @@ function Products() {
         <div className="images__container images__container_products">
           <img
             className="images__container1"
-            src="./img/Headphones3.png"
+            src={headphones3}
             alt="headphones"
           />
           <img
             className="images__container2"
-            src="./img/Headphones2.png"
+            src={headphones2}
             alt="headphones"
           />
           <img
             className="images__container3"
-            src="./img/Headphones1.png"
+            src={headphones1}
             alt="headphones"
           />
         </div>

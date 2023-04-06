@@ -1,18 +1,21 @@
+import headphones2 from '..//../img/Headphones-2.png';
+import headphones1 from '..//../img/Headphones-1.png';
+
 function Launches() {
   return (
     <section className="launches">
       <h2 className="launches__title">New Launches</h2>
-      <div className="products product_launches">
+      <div className="products product_launches ">
         <div className="images images_launches">
           <div className="images__container_launches">
             <img
-              className="images__launches-1"
-              src="./img/Headphones-2.png"
+              className="images__launches-1 "
+              src={headphones2}
               alt="headphones"
             />
             <img
               className="images__launches-2"
-              src="./img/Headphones-1.png"
+              src={headphones1}
               alt="headphones"
             />
           </div>

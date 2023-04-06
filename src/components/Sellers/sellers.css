@@ -1,3 +1,4 @@
+
 .sellers {
     display: flex;
     flex-direction: column;
@@ -47,3 +48,7 @@
 .price_launches {
     margin-bottom: 56px;
 }
+
+.card__btn {
+    width: 100%;
+  }

@@ -11,6 +11,10 @@
     color: white;
 }
 
+.card__btn {
+    width: 100%;
+  }
+
 .button-outline {
     background-color: transparent;
     color: white;
