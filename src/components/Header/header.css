@@ -23,6 +23,7 @@
     color: #10B981;
     font-style: italic;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .header__logo-black {
@@ -139,18 +140,20 @@
 }
 
 .menu {
-
-    height: 81px;
+    padding: 30px 0;
     margin-top: 63px;
     background-color: var(--primary);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 75px;
+    gap: 155px;
 
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+
+    
 }
 
 .menu .menu__link {
@@ -163,10 +166,6 @@
     background-color: transparent;
     color: #fff;
     text-decoration: none;
-}
-
-.menu li:not(:first-child) {
-    margin-left: 75px;
 }
 
 .about {
@@ -575,3 +574,9 @@ h1::first-letter {
     }
 
 }
+
+@media (max-width: 360px) {
+    .menu {
+      gap: 25px;
+    }
+  }
