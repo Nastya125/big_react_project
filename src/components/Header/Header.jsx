@@ -1,10 +1,12 @@
-import ellips7 from '..//../img/Ellipse7.png';
-import ellips9 from '..//../img/Ellipse9.png';
-import ellips11 from '..//../img/Ellipse11.png';
-import ellips13 from '..//../img/Ellipse13.png';
-import image11 from '..//../img/image11.png';
-import star1 from '..//../img/Star1.png';
-import image6 from '..//../img/image6.png';
+import {
+  ellips7,
+  ellips9,
+  ellips11,
+  ellips13,
+  image11,
+  star1,
+  image6,
+} from "./img";
 
 function Header() {
   return (
@@ -12,20 +14,12 @@ function Header() {
       <div className="header__container">
         <nav className="navbar navbar_header">
           <div className="header__wrapper">
-            <p className="header__logo">
+            <h3 className="header__logo">
               Shop<span className="header__logo-black">per</span>
-            </p>
-
-            <label className="header__form-search" for="">
-              <input
-                placeholder="Search Items"
-                type="search"
-                className="header__input-field"
-              />
-            </label>
-
-            <p className="header__basket-info">0 items Added</p>
-            <button className="header__authorization">Login or Sign Up</button>
+            </h3>
+            <SearchInput />
+            <BasketBtn />
+            <LoginBtn />
           </div>
 
           <ul className="menu">
@@ -64,26 +58,10 @@ function Header() {
             </div>
             <div className="about__reviews">
               <div className="icons">
-                <img
-                  className="icons__face icon1"
-                  src={ellips7}
-                  alt=""
-                />
-                <img
-                  className="icons__face icon2"
-                  src={ellips9}
-                  alt=""
-                />
-                <img
-                  className="icons__face icon3"
-                  src={ellips11}
-                  alt=""
-                />
-                <img
-                  className="icons__face icon4"
-                  src={ellips13}
-                  alt=""
-                />
+                <img className="icons__face icon1" src={ellips7} alt="" />
+                <img className="icons__face icon2" src={ellips9} alt="" />
+                <img className="icons__face icon3" src={ellips11} alt="" />
+                <img className="icons__face icon4" src={ellips13} alt="" />
               </div>
               <p className="about__reviews_descr">
                 15k Well <br />
@@ -121,16 +99,8 @@ function Header() {
                 <span className="beets__char18">/</span>
                 <span className="beets__char19">a</span>
               </p>
-              <img
-                className="star star__first"
-                src={star1}
-                alt="star"
-              />
-              <img
-                className="star star__second"
-                src={star1}
-                alt="star"
-              />
+              <img className="star star__first" src={star1} alt="star" />
+              <img className="star star__second" src={star1} alt="star" />
 
               <div className="beets__img-price">
                 <img className="beets__img" src={image6} alt="" />
@@ -143,5 +113,25 @@ function Header() {
     </div>
   );
 }
+
+const SearchInput = (props) => {
+  return (
+    <label className="header__form-search" for="">
+      <input
+        placeholder="Search Items"
+        type="search"
+        className="header__input-field"
+      />
+    </label>
+  );
+};
+
+const BasketBtn = (props) => {
+  return <button className="header__basket-info">0 items Added</button>;
+};
+
+const LoginBtn = (props) => {
+  return <button className="header__authorization">Login or Sign Up</button>;
+};
 
 export default Header;

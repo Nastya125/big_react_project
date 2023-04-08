@@ -1,6 +1,4 @@
-import headphones3 from '..//../img/Headphones3.png';
-import headphones2 from '..//../img/Headphones2.png';
-import headphones1 from '..//../img/Headphones1.png';
+import { headphones3, headphones2, headphones1 } from "./img";
 
 function Products() {
   return (
@@ -37,7 +35,9 @@ function Products() {
           visual form of a product
         </p>
         <div className="product-descr__buttons">
-          <button className="btn-buy button-card_product-descr">Add to cart</button>
+          <button className="btn-buy button-card_product-descr">
+            Add to cart
+          </button>
           <button className="button-outline button-outline_product-descr">
             View more
           </button>

@@ -11,6 +11,10 @@
     color: white;
 }
 
+.btn-buy:hover {
+    background-color: #1d986f;
+}
+
 .card__btn {
     width: 100%;
   }
@@ -31,21 +35,18 @@
 .button-oval {
     width: 177px;
     height: 91px;
-    background-color: var(--primary);
+    background-color: none;
+
     border-radius: 50%;
-    color: white;
+    color: black;
     font-size: 26px;
     border: none;
     font-weight: 600;
 }
 
-.button-oval_transparent {
-    color: #000000;
-    background-color: transparent;
-}
-
-.button-oval_margin-l {
-    margin-left: 40px;
+.button-oval_active {
+    color: white;
+    background-color: var(--primary);
 }
 
 .card-btn {

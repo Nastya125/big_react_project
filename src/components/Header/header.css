@@ -42,7 +42,7 @@
     align-items: center;
     width: 38px;
     height: 38px;
-    background-image: url("/src/img/search-Filled.png");
+    background-image: url("/src/components/Header/img/search-Filled.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--primary);
@@ -90,13 +90,17 @@
     align-items: center;
     width: 20px;
     height: 25px;
-    background-image: url("/src/img/basket.svg");
+    background-image: url("/src/components/Header/img/basket.svg");
     background-repeat: no-repeat;
     background-position: center;
 
     left: 40px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.header__basket-info:hover {
+    background-color: #fff;
 }
 
 .header__authorization {
@@ -114,6 +118,10 @@
     position: relative;
 }
 
+.header__authorization:hover {
+    background-color: #1d986f;
+}
+
 .header__authorization::before {
     content: "";
     position: absolute;
@@ -121,7 +129,7 @@
     align-items: center;
     width: 20px;
     height: 25px;
-    background-image: url("/src/img/login.svg");
+    background-image: url("/src/components/Header/img/login.svg");
     background-repeat: no-repeat;
     background-position: center;
 
@@ -285,7 +293,7 @@ h1::first-letter {
     align-items: center;
     width: 84px;
     height: 84px;
-    background-image: url("/src/img/Ellipse21.png");
+    background-image: url("/src/components/Header/img/Ellipse21.png");
     background-repeat: no-repeat;
     background-position: center;
 
