@@ -12,9 +12,6 @@
     font-size: 44px;
     color: var(--textprimarycolor);
     text-align: center;
-}
-
-.sellers__title-margin-bt {
     margin-bottom: 65px;
 }
 
@@ -35,20 +32,19 @@
     flex-wrap: wrap;
 }
 
-.launches__title {
-    font-weight: 600;
-    line-height: 54px;
-    font-size: 44px;
-    color: var(--textprimarycolor);
-    text-align: center;
-    margin-top: 130px;
-    margin-bottom: 120px;
-}
-
-.price_launches {
-    margin-bottom: 56px;
-}
-
 .card__btn {
     width: 100%;
+  }
+
+  @media (max-width:568px) {
+    .sellers {
+        padding: 56px;
+    }
+    .tab__btn-wrapper {
+        flex-direction: column;
+    }
+
+    .tab__card-wrapper {
+        width: 100%;
+    }
   }

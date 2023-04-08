@@ -106,7 +106,9 @@
 
 
 @media (max-width:768px) {
-
+    .footer {
+        margin: 20px;
+    }
     .footer__nav {
         flex-direction: column;
         gap: 20px;
@@ -129,7 +131,13 @@
 
     .footer__col2,
     .footer__col3,
-    .footer__col4 {
+    .footer__col4,
+    .footer__container-policy-socials {
         flex-wrap: wrap;
+    }
+
+    .footer__container-policy-socials {
+        flex-direction: column;
+        gap: 20px;
     }
 }

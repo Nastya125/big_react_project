@@ -146,10 +146,6 @@
     .product-descr__buttons .btn-buy_launches {
         width: 100%;
     }
-
-    .product_launches {
-        padding: 54px 40px;
-    }
 }
 
 @media (max-width:568px) {

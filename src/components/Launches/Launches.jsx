@@ -4,8 +4,8 @@ import headphones1 from '..//../img/Headphones-1.png';
 function Launches() {
   return (
     <section className="launches">
-      <h2 className="launches__title">New Launches</h2>
-      <div className="products product_launches ">
+      <h2 className="sellers__title">New Launches</h2>
+      <div className="product_launches ">
         <div className="images images_launches">
           <div className="images__container_launches">
             <img
@@ -21,7 +21,7 @@ function Launches() {
           </div>
         </div>
 
-        <div className="product-descr product-descr_big">
+        <div className="product-descr">
           <h2 className="product-descr__title">Airdrop 500 Anc</h2>
           <p className="product-descr__description product-descr__description_launches">
             Lorem ipsum is a placeholder text commonly used to demonstrate the
