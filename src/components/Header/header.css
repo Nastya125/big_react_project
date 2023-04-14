@@ -502,6 +502,10 @@ h1::first-letter {
     .about__descr {
         width: 475px;
     }
+
+    .menu {
+        gap: 70px;
+    }
 }
 
 

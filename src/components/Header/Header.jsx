@@ -10,7 +10,7 @@ import {
 
 function Header() {
   return (
-    <div classNameName="header">
+    <div className="header">
       <div className="header__container">
         <nav className="navbar navbar_header">
           <div className="header__wrapper">
@@ -116,7 +116,7 @@ function Header() {
 
 const SearchInput = (props) => {
   return (
-    <label className="header__form-search" for="">
+    <label className="header__form-search" htmlFor="">
       <input
         placeholder="Search Items"
         type="search"

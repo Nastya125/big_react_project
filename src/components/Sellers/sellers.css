@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 130px;
+    position: relative;
 }
 
 .sellers__title {

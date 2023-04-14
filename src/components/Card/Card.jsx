@@ -8,14 +8,15 @@ function Card(props) {
     price = 20,
     rating = 5,
     title = "Card Text",
+    image = { src: BoatRockerz333, alt: "card__headphons" }
   } = props;
   return (
-    <div className="card tab__card">
+    <div className="card tab__card" onClick={() => props.click()} >
       <div className={color ? "card__product " + color : "card__product green"}>
         <img
           className="card__img"
-          src={BoatRockerz333}
-          alt="Boat Rockerz 333"
+          src={image.src}
+          alt={image.alt}
         />
         <div className="card__descr">
           <h4 className="card__text">{title}</h4>
@@ -31,9 +32,15 @@ function Card(props) {
         </div>
       </div>
       <button className="card__btn btn-buy">Add to cart</button>
-      {discount ? <div className={color ? `card__discount card__discount_${color}` : 'card__discount'}>
-        <p>Save {discount}%</p>
-      </div> : null}
+      {discount ? (
+        <div
+          className={
+            color ? `card__discount card__discount_${color}` : "card__discount"
+          }
+        >
+          <p>Save {discount}%</p>
+        </div>
+      ) : null}
     </div>
   );
 }
