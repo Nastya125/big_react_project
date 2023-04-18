@@ -32,17 +32,7 @@
     align-items: center;
 }
 
-.blue {
-    background-color: #c9f2ff;
-  }
 
-.purp {
-    background-color: #e5d5ff;
-  }
-
-.green {
-    background-color: #ecfef4
-}
 
 .card__img {
     width: 196px;
@@ -87,26 +77,6 @@
     margin-top: 20px;
 }
 
-.card__rating {
-    display: inline-flex;
-    justify-content: baseline;
-    align-items: center;
-}
-
-.card__rating > img {
-    width: 17px;
-    height: 17px;
-    
-}
-.card__rating-count {
-    display: inline-flex;
-    color: #888888;
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 10px;
-    margin-left: 13px;
-}
-
 .card__btn {
     width: 100%;
 }
@@ -144,6 +114,17 @@
 }
 .card__discount_blue {
     background-color: #08bdbe;
+}
+.blue {
+    background-color: #c9f2ff;
+  }
+
+.purp {
+    background-color: #e5d5ff;
+  }
+
+.green {
+    background-color: #ecfef4
 }
 
 

@@ -1,37 +1,29 @@
 import "./card.css";
-import { BoatRockerz333, redStart, BoatKerz234, BoatRockerz323 } from "./img";
+import { BoatRockerz333, BoatKerz234, BoatRockerz323 } from "./img";
+import { MainBtn } from "../Buttons";
+import RatingLevel from "../RatingLevel/RatingLevel";
 
-function Card(props) {
+function Card({ data, openModal }) {
   const {
-    color,
+    color = "",
     discount,
     price = 20,
     rating = 5,
-    title = "Card Text",
-    image = { src: BoatRockerz333, alt: "card__headphons" }
-  } = props;
+    reviews,
+    title = " Card Text",
+    image = { src: BoatRockerz333, alt: "card__headphons" },
+  } = data;
   return (
-    <div className="card tab__card" onClick={() => props.click()} >
+    <div className="card tab__card" onClick={() => openModal(data)}>
       <div className={color ? "card__product " + color : "card__product green"}>
-        <img
-          className="card__img"
-          src={image.src}
-          alt={image.alt}
-        />
+        <img className="card__img" src={image.src} alt={image.alt} />
         <div className="card__descr">
           <h4 className="card__text">{title}</h4>
-          <div className="card__rating">
-            <img src={redStart} alt="rating" />
-            <img src={redStart} alt="rating" />
-            <img src={redStart} alt="rating" />
-            <img src={redStart} alt="rating" />
-            <img src={redStart} alt="rating" />
-            <p className="card__rating-count">75 Reviews</p>
-          </div>
-          <p className="card__price">{price}$</p>
+          <RatingLevel rating={rating} reviews={reviews} />
+          <p className="card__price">${price}</p>
         </div>
       </div>
-      <button className="card__btn btn-buy">Add to cart</button>
+      <MainBtn textContent={"Add to cart"} />
       {discount ? (
         <div
           className={

@@ -12,13 +12,18 @@ import Sellers from './components/Sellers/Sellers';
 import Earphones from './components/Earphones/Earphones';
 import Launches from './components/Launches/Launches';
 import Footer from './components/footer/Footer';
+import { useState } from 'react';
 
 function App() {
+  const [ countItems, setCountItems] = useState(0);
+  function incrementCountItems() {
+    setCountItems(countItems + 1)
+  }
   return (
     <div className="App">
-      <Header />
+      <Header countItems={countItems}/>
       <Products />
-      <Sellers />
+      <Sellers setCountItems={incrementCountItems}/>
       <Earphones />
       <Launches />
       <Footer />

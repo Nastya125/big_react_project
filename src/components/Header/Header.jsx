@@ -8,7 +8,9 @@ import {
   image6,
 } from "./img";
 
-function Header() {
+import "./header.css";
+
+function Header({countItems}) {
   return (
     <div className="header">
       <div className="header__container">
@@ -18,7 +20,7 @@ function Header() {
               Shop<span className="header__logo-black">per</span>
             </h3>
             <SearchInput />
-            <BasketBtn />
+            <BasketBtn countItems={countItems}/>
             <LoginBtn />
           </div>
 
@@ -126,8 +128,12 @@ const SearchInput = (props) => {
   );
 };
 
-const BasketBtn = (props) => {
-  return <button className="header__basket-info">0 items Added</button>;
+const BasketBtn = ({countItems = 0}) => {
+  return (
+    <button className="header__basket-info">
+      {countItems} items Added
+    </button>
+  );
 };
 
 const LoginBtn = (props) => {
