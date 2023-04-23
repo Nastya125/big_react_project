@@ -1,5 +1,6 @@
 import headphones2 from '..//../img/Headphones-2.png';
 import headphones1 from '..//../img/Headphones-1.png';
+import "./launches.css"
 
 function Launches() {
   return (

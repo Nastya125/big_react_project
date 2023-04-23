@@ -1,4 +1,5 @@
 import { headphones3, headphones2, headphones1 } from "./img";
+import "./products.css"
 
 function Products() {
   return (

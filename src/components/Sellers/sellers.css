@@ -24,6 +24,10 @@
 
 .tab__btn-wrapper {
     margin-bottom: 99px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -31,11 +35,8 @@
     display: flex;
     gap: 93px;
     flex-wrap: wrap;
+    justify-content: center;
 }
-
-.card__btn {
-    width: 100%;
-  }
 
   @media (max-width:568px) {
     .sellers {
